@@ -8,13 +8,13 @@ Satelite.belongsTo(Planet, { foreingKey: "planetId", as: "planet" })
 
 Cap.belongsToMany(Spaceship, {
   foreingKey: 'capId',
-  through: 'capSpaceship',
+  through: 'capSpaceShip',
   as: 'spaceships',
 })
 
 Spaceship.belongsToMany(Cap, {
   foreingKey: 'spaceshipId',
-  through: 'capSpaceship',
+  through: 'capSpaceShip',
   as: 'caps',
 })
 
